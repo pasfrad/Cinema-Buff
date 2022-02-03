@@ -1,17 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time Capsule</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <title>Movie Review</title>
+    <!-- Compressed CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css"
+        crossorigin="anonymous">
+    <!--favicon link-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    
+    <div>
+        <div class="title-bar ">
+            <div class="website-title">Movie Review 🎦</div>
+            <div class="top-bar-right"></div>
+        </div>
+        <div class="top-bar top-section" id="example-menu">
+            <div class="top-bar-right">
+
+                <ul class="dropdown menu" data-dropdown-menu>
+                    <!--modal buttons-->
+                    <li class="top-li">
+                        <p><a data-open="Modal1" class="modal-button">About us</a></p>
+                    </li>
+                    <li class="top-li">
+                        <p><a data-open="Modal2" class="modal-button">Contact us</a></p>
+                    </li>
+                </ul>
+
+            </div>
+            <!--about us modal-->
+            <div class="reveal" id="Modal1" data-reveal>
+                <p class="lead">About us:</p>
+                <p>Movie Review is designed so that with one easy click of a button, you can pull up information on a
+                    movie that you would like to watch.</p>
+
+                <p>This website was created by a collaborative effort of a small band of coders to produce an
+                    application to make your life a little easier. It is our hope to help you save time and not have to
+                    watch a movie that just doesn't suit your needs.
+                </p>
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!--contact us modal-->
+            <div class="reveal" id="Modal2" data-reveal>
+                <h1>Contact us:</h1>
+                <p class="lead">Phone number:</p>
+                <p>1-800-259-2676</p>
+                <p class="lead">E-mail:</p>
+                <p>email@gmail.com</p>
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
 
 
+        </div>
 
-    <script src="script.js"></script>
+        <!--search bar-->
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li><input type="search" placeholder="Search a movie title here"></li>
+                <li><button type="button" class="button blue-button">Search</button></li>
+            </ul>
+        </div>
+
+
+        <!--search results will display in these-->
+        <!--they are not visible because they are set to display:none-->
+        <!--they are alreaady styled so you can have the function set them to display:block and then place the search results in them-->
+        <!--or use the classes and have JavaScript create them-->
+        <div class="row small-up-2 medium-up-3 large-up-5 align-center top-row">
+            <div class="column col-change">
+                <div class="callout callout-box" style="display:none">
+                    <h5></h5>
+                    <p></p>
+                    <a href="#">.</a>
+                </div>
+            </div>
+            <div class="column col-change">
+                <div class="callout callout-box" style="display:none">
+                    <h5>Example of what it will look like</h5>
+                    <p>Information will go here</p>
+                    <p>and more info here</p>
+                </div>
+            </div>
+            <div class="column col-change">
+                <div class="callout callout-box" style="display:none">
+                    <h5></h5>
+                    <p></p>
+
+                </div>
+            </div>
+            <div class="column col-change callout-box" style="display:none">
+                <div class="callout callout-box">
+                    <h5></h5>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="column col-change callout-box" style="display:none">
+                <div class=" callout callout-box">
+                    <h5></h5>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="column col-change callout-box" style="display:none">
+                <div class="callout callout-box">
+                    <h5></h5>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="column col-change callout-box" style="display:none">
+                <div class="callout callout-box">
+                    <h5></h5>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="column col-change callout-box" style="display:none">
+                <div class="callout callout-box">
+                    <h5></h5>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="column col-change callout-box" style="display:none">
+                <div class="callout callout-box">
+                    <h5></h5>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="column col-change callout-box" style="display:none">
+                <div class="callout callout-box">
+                    <h5></h5>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- jquery link -->
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+                integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+            <!-- Compressed JavaScript -->
+            <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js"
+                crossorigin="anonymous"></script>
+
+            <script src="script.js"></script>
 </body>
+
+
+
 </html>
