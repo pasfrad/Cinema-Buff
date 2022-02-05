@@ -1,0 +1,55 @@
+:root {
+  --theBlue: #0078d7;
+  --topGrey: #bfb8b2;
+}
+
+body {
+    background-image: url("photo6.jpg");
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+ 
+ /* styling for title */
+.website-title {
+  font-size: 45px;
+  font-family: 'Armada CPC','Segoe UI', Tahoma, Verdana, sans-serif; 
+  color: white;
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+
+/* styling for about us and contact use section */
+.top-section {
+  background-color: var(--topGrey);
+}
+
+.top-li {
+  background-color: var(--topGrey); 
+}
+
+.modal-button {
+color: var(--theBlue);  
+margin-top: 15px;
+}
+
+/*styling for search button */
+.blue-button{
+  background-color: var(--theBlue);
+}
+
+/*styling for callout boxes */
+.col-change {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.callout-box {
+  border-radius: 10px;
+}
+
+
+
+
+
+ 
+  
