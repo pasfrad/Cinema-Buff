@@ -65,9 +65,10 @@
 
         <!--search bar-->
         <div class="top-bar-right">
+            <div class="status"></div>
             <ul class="menu">
-                <li><input type="search" placeholder="Search a movie title here"></li>
-                <li><button type="button" class="button blue-button">Search</button></li>
+                <li><input type="search" id="searchMovie" placeholder="Search a movie title here"></li>
+                <li><button type="button" id="searchBtn" class="button blue-button">Search</button></li>
             </ul>
         </div>
 
@@ -85,10 +86,16 @@
                 </div>
             </div>
             <div class="column col-change">
-                <div class="callout callout-box" style="display:none">
-                    <h5>Example of what it will look like</h5>
-                    <p>Information will go here</p>
-                    <p>and more info here</p>
+                <div class="callout callout-box searchResults" style="display:none">
+                    <!-- class to alert user if their search is unrecognizable -->
+                    <h2 class="falseSearch"></h2>
+                    <!-- classes to display movie poster and relevant movie information -->
+                    <img class = "moviePoster" src="#" alt="searched movie poster">
+                    <h5 class = "movieName"></h5>
+                    <h6 class= "movieRated"></h6>
+                    <p class= "imdbValue"></p>
+                    <p class = "rottenValue"></p>
+                    <p class = "metaValue"></p>
                 </div>
             </div>
             <div class="column col-change">
