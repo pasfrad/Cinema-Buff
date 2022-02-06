@@ -3,15 +3,22 @@
   --topGrey: #bfb8b2;
 }
 
+/* styling of background image */
 body {
     background-image: url("photo6.jpg");
     padding-bottom: 10px;
     margin-bottom: 10px;
+    background-size: 1800px 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color:black;
+
   }
  
  /* styling for title */
 .website-title {
-  font-size: 45px;
+  font-size: 80px;
   font-family: 'Armada CPC','Segoe UI', Tahoma, Verdana, sans-serif; 
   color: white;
   margin-right: 30px;
@@ -31,10 +38,21 @@ body {
   color: whitesmoke;
 }
 
+/*styling for modal buttons */
 .modal-button {
-color: var(--theBlue);  
-margin-top: 15px;
-}
+  color: var(--theBlue); 
+  font-size: 20px; 
+  font-weight: bold;
+  margin-top: 15px;
+  }
+  
+  .modal-button3 {
+    color: var(--theBlue); 
+    font-size: 20px; 
+    font-weight: bold;
+    margin-top: 25px;
+    }
+  
 
 /*styling for search button */
 .blue-button{
@@ -45,15 +63,14 @@ margin-top: 15px;
 .col-change {
   margin-left: 10%;
   margin-right: 10%;
+  margin-top: 40px;
 }
 
 .callout-box {
   border-radius: 10px;
 }
 
-.showMe {
-  display: block;
-}
+
 
 
 
