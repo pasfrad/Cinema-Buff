@@ -17,7 +17,7 @@
 <body>
     <div>
         <div class="title-bar ">
-            <div class="website-title">Movie Review 🎦</div>
+            <div class="website-title">Movie Review</div><img id="final-logo" src="icon.png"></img>
             <div class="top-bar-right"></div>
         </div>
         <div class="top-bar top-section" id="example-menu">
@@ -30,6 +30,9 @@
                     </li>
                     <li class="top-li">
                         <p><a data-open="Modal2" class="modal-button">Contact us</a></p>
+                    </li>
+                    <li class="top-li">
+                        <p><button data-open="Modal3" id="modal-3" class="modal-button3">Change Our Logo</button></p>
                     </li>
                 </ul>
 
@@ -59,8 +62,22 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-
-
+        </div>
+        <!--change our logo modal-->
+        <div class="large reveal" id="Modal3" data-reveal>
+            <h1>Change our logo:</h1>
+            <img class="pick-giph"></img>
+            <img class="pick-giph"></img>
+            <img class="pick-giph"></img>
+            <img class="pick-giph"></img>
+            <img class="pick-giph"></img>
+            <img class="pick-giph"></img>
+            <img class="pick-giph" src="film.png"></img>
+            <img class="pick-giph" src="popcorn.png"></img>
+            <img class="pick-giph" src="icon.png"></img>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
         </div>
 
         <!--search bar-->
@@ -90,12 +107,12 @@
                     <!-- class to alert user if their search is unrecognizable -->
                     <h2 class="falseSearch"></h2>
                     <!-- classes to display movie poster and relevant movie information -->
-                    <img class = "moviePoster" src="#" alt="searched movie poster">
-                    <h5 class = "movieName"></h5>
-                    <h6 class= "movieRated"></h6>
-                    <p class= "imdbValue"></p>
-                    <p class = "rottenValue"></p>
-                    <p class = "metaValue"></p>
+                    <img class="moviePoster" src="#" alt="searched movie poster">
+                    <h5 class="movieName"></h5>
+                    <h6 class="movieRated"></h6>
+                    <p class="imdbValue"></p>
+                    <p class="rottenValue"></p>
+                    <p class="metaValue"></p>
                 </div>
             </div>
             <div class="column col-change">
