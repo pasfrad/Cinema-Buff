@@ -13,6 +13,7 @@ const modal3 = $('#modal-3');
 
 //requests movie information from omdb API based on movie title
 function movieSearch(movieTitle) {
+
   const movieQueryUrl = `http://www.omdbapi.com/?apikey=${Omdb_APIKey}&t=${movieTitle}`
   fetch(movieQueryUrl)
     .then(function (response) {
@@ -50,6 +51,45 @@ function movieSearch(movieTitle) {
         //pushes the searched information to local storage
         searchHistory.push({
           name: name, rated: rated, poster: poster, imdb: imdb, rotten: rotten, meta: meta
+
+    var movieQueryUrl = `https://www.omdbapi.com/?apikey=${Omdb_APIKey}&t=${movieTitle}`
+    fetch(movieQueryUrl)
+        .then(function (response) {
+            return response.json()
+        })
+        //alerts user if their search is unrecognizable or displays relevant movie information if successful.
+        .then(function (data) {
+            if (data.Error) {
+
+                falseSearch.text("No Results Found");
+                return;
+            }
+            else {
+
+                var movieInfo = $(".searchResults");
+                console.log(data);
+                movieInfo.css({
+                    display: "flex"
+                });
+                // variables & functions needed to select and display relevant movie information from omdb
+                var name = data.Title;
+                var rated = data.Rated;
+                var poster = data.Poster;
+                var plot = data.Plot;
+
+                $(".movieName").text(name);
+                $(".movieRated").text(rated);
+                $(".moviePoster").attr("src", poster);
+                $(".moviePlot").text(plot);
+
+                //pushes the searched information to local storage
+                searchHistory.push({
+                    name: name, rated: rated, poster: poster, plot: plot
+                })
+                localStorage.setItem("movieSave", JSON.stringify(searchHistory))
+
+            }
+
         })
         localStorage.setItem("movieSave", JSON.stringify(searchHistory))
 
@@ -87,10 +127,14 @@ function getHistory() {
   console.log(searchHistory);
 }
 
+
 //function for displaying logos
 function displayGiphy(data) {
   for (let i = 0; i < data.length; i++) {
     const { images } = data[i];
+
+getHistory();
+
 
 
     pickGiph[i].src = images.fixed_width_small_still.url;

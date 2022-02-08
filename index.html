@@ -32,7 +32,7 @@
                         <p><a data-open="Modal2" class="modal-button">Contact us</a></p>
                     </li>
                     <li class="top-li">
-                        <p><button data-open="Modal3" id="modal-3" class="modal-button3">Change Our Logo</button></p>
+                        <p><button data-open="Modal3" id="modal-3" class="modal-button3">Customize Our Logo</button></p>
                     </li>
                 </ul>
 
@@ -65,7 +65,9 @@
         </div>
         <!--change our logo modal-->
         <div class="large reveal" id="Modal3" data-reveal>
-            <h1>Change our logo:</h1>
+            <h1>Customize your logo</h1>
+            <p>You can customize our site to fit your personality. If one of the logos below catches your fancy, just
+                click on it and we'll use that as your custom logo. </p>
             <img class="pick-giph"></img>
             <img class="pick-giph"></img>
             <img class="pick-giph"></img>
@@ -91,17 +93,8 @@
 
 
         <!--search results will display in these-->
-        <!--they are not visible because they are set to display:none-->
-        <!--they are alreaady styled so you can have the function set them to display:block and then place the search results in them-->
-        <!--or use the classes and have JavaScript create them-->
         <div class="row small-up-2 medium-up-3 large-up-5 align-center top-row">
-            <div class="column col-change">
-                <div class="callout callout-box" style="display:none">
-                    <h5></h5>
-                    <p></p>
-                    <a href="#">.</a>
-                </div>
-            </div>
+
             <div class="column col-change">
                 <div class="callout callout-box searchResults" style="display:none">
                     <!-- class to alert user if their search is unrecognizable -->
@@ -115,6 +108,15 @@
                     <p class="metaValue"></p>
                     <br>
                     <p id="reviews"></p>
+                    <div> <img class="moviePoster" src="#" alt="searched movie poster"></div>
+                    <div class="results">
+
+                        <h5 class="movieName"></h5>
+                        <h6 class="titles">Rated:</h6>
+                        <h6 class="movieRated"></h6>
+                        <h5 class="titles">Description:</h5>
+                        <p class="moviePlot"></p>
+                    </div>
                 </div>
             </div>
             <div class="column col-change">
@@ -124,55 +126,7 @@
 
                 </div>
             </div>
-            <div class="column col-change callout-box" style="display:none">
-                <div class="callout callout-box">
-                    <h5></h5>
-                    <p></p>
-                    <p></p>
-                </div>
-            </div>
-            <div class="column col-change callout-box" style="display:none">
-                <div class=" callout callout-box">
-                    <h5></h5>
-                    <p></p>
-                    <p></p>
-                </div>
-            </div>
-            <div class="column col-change callout-box" style="display:none">
-                <div class="callout callout-box">
-                    <h5></h5>
-                    <p></p>
-                    <p></p>
-                </div>
-            </div>
-            <div class="column col-change callout-box" style="display:none">
-                <div class="callout callout-box">
-                    <h5></h5>
-                    <p></p>
-                    <p></p>
-                </div>
-            </div>
-            <div class="column col-change callout-box" style="display:none">
-                <div class="callout callout-box">
-                    <h5></h5>
-                    <p></p>
-                    <p></p>
-                </div>
-            </div>
-            <div class="column col-change callout-box" style="display:none">
-                <div class="callout callout-box">
-                    <h5></h5>
-                    <p></p>
-                    <p></p>
-                </div>
-            </div>
-            <div class="column col-change callout-box" style="display:none">
-                <div class="callout callout-box">
-                    <h5></h5>
-                    <p></p>
-                    <p></p>
-                </div>
-            </div>
+
 
             <!-- jquery link -->
             <script src="https://code.jquery.com/jquery-3.6.0.min.js"
