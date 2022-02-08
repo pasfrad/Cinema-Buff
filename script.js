@@ -20,7 +20,7 @@ $("#searchBtn").click(function (event) {
 
 //requests movie information from omdb API based on movie title
 function movieSearch(movieTitle) {
-    var movieQueryUrl = `http://www.omdbapi.com/?apikey=${Omdb_APIKey}&t=${movieTitle}`
+    var movieQueryUrl = `https://www.omdbapi.com/?apikey=${Omdb_APIKey}&t=${movieTitle}`
     fetch(movieQueryUrl)
         .then(function (response) {
             return response.json()
