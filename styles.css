@@ -75,10 +75,18 @@ body {
 }
 
 /*search results */
+.titles {
+  font-weight: bold; 
+  font-size: 18px; 
+  margin-top: 20px;
+}
+
 .movieName {
   font-size: 36px; 
-    font-weight: bolder;
+  font-weight: bolder;
 }
+
+
 
 
 
