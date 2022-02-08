@@ -10,14 +10,13 @@ let searchHistory = [];
 
 var falseSearch = $(".status");
 
-//takes movie input a
-nd passes the title to the movieSearch function
-    $("#searchBtn").click(function (event) {
-        event.preventDefault();
-        falseSearch.text("");
-        var movieInput = $("#searchMovie").val();
-        movieSearch(movieInput)
-    });
+//takes movie input and passes the title to the movieSearch function
+$("#searchBtn").click(function (event) {
+    event.preventDefault();
+    falseSearch.text("");
+    var movieInput = $("#searchMovie").val();
+    movieSearch(movieInput)
+});
 
 //requests movie information from omdb API based on movie title
 function movieSearch(movieTitle) {
@@ -53,7 +52,7 @@ function movieSearch(movieTitle) {
 
                 //pushes the searched information to local storage
                 searchHistory.push({
-                    name: name, rated: rated, poster: poster, plot : plot
+                    name: name, rated: rated, poster: poster, plot: plot
                 })
                 localStorage.setItem("movieSave", JSON.stringify(searchHistory))
 
@@ -70,7 +69,7 @@ function getHistory() {
     console.log(searchHistory);
 }
 
-getHistory()
+getHistory();
 
 //varibles and const for change logo feature
 var pickGiph = $('.pick-giph');
