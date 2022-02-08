@@ -43,20 +43,16 @@ function movieSearch(movieTitle) {
                 var name = data.Title;
                 var rated = data.Rated;
                 var poster = data.Poster;
-                var imdb = data.Ratings[0].Value;
-                var rotten = data.Ratings[1].Value;
-                var meta = data.Ratings[2].Value;
+                var plot = data.Plot;
 
                 $(".movieName").text(name);
                 $(".movieRated").text(rated);
                 $(".moviePoster").attr("src", poster);
-                $(".imdbValue").text("IMDB Rating - " + imdb);
-                $(".rottenValue").text("Rotten Tomatoes - " + rotten + " Fresh");
-                $(".metaValue").text("Metacritic Rating - " + meta);
+                $(".moviePlot").text(plot);
 
                 //pushes the searched information to local storage
                 searchHistory.push({
-                    name: name, rated: rated, poster: poster, imdb: imdb, rotten: rotten, meta: meta
+                    name: name, rated: rated, poster: poster, plot : plot
                 })
                 localStorage.setItem("movieSave", JSON.stringify(searchHistory))
 
