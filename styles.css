@@ -69,9 +69,6 @@ body {
 .callout-box {
   border-radius: 10px;
   width: 90%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
 }
 
 /*search results */
@@ -86,6 +83,15 @@ body {
   font-weight: bolder;
 }
 
+.movieDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.results {
+  padding: 5px;
+}
 
 
 
