@@ -52,7 +52,7 @@ function movieSearch(movieTitle) {
         searchHistory.push({
           name: name, rated: rated, poster: poster, imdb: imdb, rotten: rotten, meta: meta
 
-    var movieQueryUrl = `https://www.omdbapi.com/?apikey=${Omdb_APIKey}&t=${movieTitle}`
+    const movieQueryUrl = `https://www.omdbapi.com/?apikey=${Omdb_APIKey}&t=${movieTitle}`
     fetch(movieQueryUrl)
         .then(function (response) {
             return response.json()
