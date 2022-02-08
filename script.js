@@ -10,13 +10,14 @@ let searchHistory = [];
 
 var falseSearch = $(".status");
 
-//takes movie input and passes the title to the movieSearch function
-$("#searchBtn").click(function (event) {
-    event.preventDefault();
-    falseSearch.text("");
-    var movieInput = $("#searchMovie").val();
-    movieSearch(movieInput)
-});
+//takes movie input a
+nd passes the title to the movieSearch function
+    $("#searchBtn").click(function (event) {
+        event.preventDefault();
+        falseSearch.text("");
+        var movieInput = $("#searchMovie").val();
+        movieSearch(movieInput)
+    });
 
 //requests movie information from omdb API based on movie title
 function movieSearch(movieTitle) {
@@ -37,7 +38,7 @@ function movieSearch(movieTitle) {
                 var movieInfo = $(".searchResults");
                 console.log(data);
                 movieInfo.css({
-                    display: "block"
+                    display: "flex"
                 });
                 // variables & functions needed to select and display relevant movie information from omdb
                 var name = data.Title;
