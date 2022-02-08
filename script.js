@@ -37,7 +37,7 @@ function movieSearch(movieTitle) {
                 var movieInfo = $(".searchResults");
                 console.log(data);
                 movieInfo.css({
-                    display: "block"
+                    display: "flex"
                 });
                 // variables & functions needed to select and display relevant movie information from omdb
                 var name = data.Title;
