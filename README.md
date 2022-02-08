@@ -15,4 +15,5 @@ As a movie fanatic, I find myself searching through multiple resources to find i
 
 
 
-Link to deployed site: 
+Link to deployed site: https://aguasvivasjc.github.io/Cinema-Buff/
+
